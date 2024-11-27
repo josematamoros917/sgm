@@ -1,0 +1,145 @@
+/* Estilo de la calavera y la dirección */
+.address-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Rock Salt", cursive;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.skull {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.skull-img {
+    width: 3rem;
+    height: 3rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.address-text {
+    font-size: 1.2rem;
+    padding-left: 5px;
+    margin: 0;
+}
+
+/* Efecto de vibración */
+@keyframes vibrate {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(3px); }
+}
+
+.vibrate {
+    animation: vibrate 0.2s ease-in-out;
+}
+
+/* Fondo de la página */
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    z-index: -10;
+}
+/* Estilo adicional para el navbar */
+.navbar {
+    z-index: 1030; /* Asegura que el navbar esté por encima del contenido */
+    background: rgba(0, 0, 0, 0.8); /* Fondo translúcido */
+    transition: background 0.3s ease; /* Animación al cambiar el fondo */
+}
+
+.navbar .nav-link {
+    color: #ffcc00; /* Color del enlace */
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ff9900; /* Cambio de color al pasar el mouse */
+}
+
+/* Navbar */
+.navbar {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro translúcido */
+}
+
+/* Imagen del logo */
+.navbar img {
+    width: 3.8rem;
+    height: 2.8rem;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.navbar-logo {
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: auto;
+    border-radius: 50%; /* Para un logo circular */
+    margin-right: 10px; /* Espacio entre el logo y otros elementos */
+}
+
+/* main-content estilos, h1 grande, p menor tamaño */
+.main-content {
+    font-family: "Rock Salt", cursive; /* Fuente seleccionada */
+    font-weight: 400;
+    font-style: normal;
+    
+    color: #ffcc00; /* Color dorado */
+    padding: 20px;
+}
+.main-content h1 {
+    font-size: 2.5rem;
+}
+.main-content p {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: black;
+}
+
+
+.taller-nombre {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.927); /* Sombra para texto */
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro translúcido */
+    color: #fff; /* Texto blanco */
+}
+
+.footer-description {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #ffcc00; /* Color dorado */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para texto */
+}
+
+.social-links a {
+    font-size: 0.8rem; /* Tamaño de los íconos */
+    
+    color: #ffcc00; /* Color inicial de los íconos */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff9900; /* Cambia el color al pasar el mouse */
+    transform: scale(1.2); /* Efecto de agrandamiento */
+}
+
+
+
